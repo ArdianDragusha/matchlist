@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Match</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/styles.css}">
+</head>
+
+<body>
+    <h1>Add Bayern Match</h1>
+
+    <form method="post" action="#" th:action="@{/addmatch}" th:object="${match}" class="form-container">
+        <div class="form-row">
+            <label for="date">Date:</label>
+            <input type="text" th:field="*{date}" id="date" placeholder="DD-MM-YYYY" />
+        </div>
+        <div class="form-row">
+            <label for="opponent">Opponent:</label>
+            <input type="text" th:field="*{opponent}" id="opponent" placeholder="Opponent" />
+        </div>
+        <div class="form-row">
+            <label for="location">Location:</label>
+            <select th:field="*{location}" id="location">
+                <option value="Home">Home</option>
+                <option value="Away">Away</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="result">Result:</label>
+            <input type="text" th:field="*{result}" id="result" placeholder="e.g. 3-1" />
+        </div>
+        <div class="form-row">
+            <label for="competition">Competition:</label>
+            <select th:field="*{competition.id}" id="competition">
+                <option th:each="comp : ${competitions}" th:value="${comp.id}" th:text="${comp.name}">Competition
+                </option>
+            </select>
+        </div>
+        <input type="submit" value="Save Match" />
+    </form>
+
+    <div class="centered-button">
+        <a th:href="@{/matchlist}">
+            <button class="btn btn-success">Back to Match List</button>
+        </a>
+    </div>
+</body>
+
+</html>

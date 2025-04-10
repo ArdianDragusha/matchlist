@@ -1,0 +1,202 @@
+body {
+    background-color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    color: #DC052D;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+}
+
+table th {
+    background-color: #0066B2;
+    color: #FFFFFF;
+    padding: 10px;
+    border: 1px solid #DC052D;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #DC052D;
+}
+
+button {
+    background-color: #DC052D;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0066B2;
+}
+
+form {
+    text-align: center;
+    margin: 20px;
+}
+
+input[type="text"],
+select {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #DC052D;
+    border-radius: 5px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #0066B2;
+}
+
+.form-row input,
+.form-row select {
+    flex: 2;
+    padding: 5px;
+    border: 1px solid #DC052D;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+    text-align: left;
+}
+
+.form-container button,
+.form-container input[type="submit"] {
+    background-color: #DC052D;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.form-container button:hover,
+.form-container input[type="submit"]:hover {
+    background-color: #0066B2;
+}
+
+a {
+    text-decoration: none;
+}
+
+a button {
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0066B2;
+    color: #FFFFFF;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+}
+
+.welcome-message {
+    margin: 0;
+    font-size: 16px;
+    color: #0066B2;
+    margin-right: 10px;
+}
+
+.logout-form {
+    margin: 0;
+}
+
+.logout-button {
+    background-color: #DC052D;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-button:hover {
+    background-color: #0066B2;
+}
+
+.centered-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.centered-button a {
+    text-decoration: none;
+}
+
+.centered-button button {
+    background-color: #DC052D;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+centered-button button:hover {
+    background-color: #0066B2;
+}
+
+.logo {
+    height: 150px;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    right: 70px;
+}

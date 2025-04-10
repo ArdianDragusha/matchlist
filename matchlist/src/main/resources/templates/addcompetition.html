@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitionform</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/styles.css}">
+</head>
+
+<body>
+    <h1>Add Competition</h1>
+    <form method="post" action="#" th:action="@{/addcompetition}" th:object="${competition}" class="form-container">
+        <div class="form-row">
+            <label for="name">Name:</label>
+            <input type="text" th:field="*{name}" id="name" placeholder="Name" />
+        </div>
+        <input type="submit" value="Add" />
+    </form>
+</body>
+
+</html>

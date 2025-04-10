@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competition List</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/styles.css}">
+</head>
+
+<body>
+    <h1>Competitions</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+        </tr>
+        <tr th:each="competition : ${competitions}">
+            <td th:text="${competition.name}">Name</td>
+        </tr>
+    </table>
+    <a href="/addcompetition"><button>Add Competition</button></a>
+    <a href="/matchlist"><button>Match list</button></a>
+</body>
+
+</html>
